@@ -1,7 +1,116 @@
-body {
-  text-align: center;
+.Dictionary {
+  max-width: 900px;
+  margin: 60px auto;
+  padding: 0 20px;
+  font-family: Arial, sans-serif;
+  cursor: default;
 }
 
-.Dictionary {
-  text-align: center;
+.Dictionary form {
+  background: #eaf6ff;
+  padding: 25px;
+  border-radius: 20px;
+  box-shadow: 0 5px 20px rgba(120, 170, 200, 0.15);
+  margin-bottom: 30px;
+}
+
+.Dictionary input {
+  width: 100%;
+  padding: 15px 20px;
+  border: 2px solid #b9def5b8;
+  border-radius: 30px;
+  font-size: 18px;
+  outline: none;
+  background: white;
+  box-sizing: border-box;
+  cursor: text;
+}
+
+.Dictionary input:focus {
+  border-color: #f3b6cfa4;
+  box-shadow: 0 0 0 4px rgba(243, 182, 207, 0.2);
+}
+
+.Dictionary input::placeholder {
+  color: #9aabb5;
+}
+
+.Results {
+  background: #ffffff;
+  padding: 30px;
+  border-radius: 22px;
+  box-shadow: 0 5px 25px rgba(120, 170, 200, 0.15);
+}
+
+.Results h2 {
+  color: #699dbfb4;
+  font-size: 52px;
+  font-weight: 700;
+  margin: 20px 0 10px;
+  text-align: left;
+  letter-spacing: -1px;
+}
+
+.Phonetic {
+  color: #d47a9d;
+  font-size: 19px;
+  margin: 0 0 30px;
+}
+
+.Meaning {
+  background: #f5faff;
+  border-left: 5px solid #b9def5;
+  padding: 20px;
+  margin: 18px 0;
+  border-radius: 0 15px 15px 0;
+}
+
+.Meaning h3 {
+  color: #d47a9d;
+  font-size: 20px;
+  margin-top: 0;
+  text-transform: capitalize;
+}
+
+.Meaning p {
+  color: #4f5d66;
+  font-size: 16px;
+  line-height: 1.6;
+}
+
+.Meaning em {
+  color: #7b8f9b;
+}
+
+.Meaning strong {
+  color: #5c9fc9;
+}
+
+.Meaning:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 5px 15px rgba(120, 170, 200, 0.12);
+  transition: 0.2s ease;
+}
+
+@media (max-width: 600px) {
+  .Dictionary {
+    margin: 30px auto;
+    padding: 0 15px;
+  }
+
+  .Results {
+    padding: 20px;
+  }
+
+  .Results h2 {
+    font-size: 34px;
+  }
+
+  .Dictionary form {
+    padding: 20px;
+  }
+
+  .Meaning {
+    padding: 16px;
+  }
 }

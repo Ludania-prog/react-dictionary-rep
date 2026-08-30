@@ -13,7 +13,24 @@ export default function App() {
         </main>
 
         <footer className="text-center App-footer">
-          Coded by Ludania David hosted on Neftlify
+          Coded by{" "}
+          <a
+            href="https://github.com/Ludania-prog"
+            target="_blank"
+            rel="noreferrer"
+          >
+            {" "}
+            Ludania David{" "}
+          </a>{" "}
+          · Hosted on{" "}
+          <a
+            href="https://dicreactproject.netlify.app/"
+            target="_blank"
+            rel="noreferrer"
+          >
+            {" "}
+            Netlify
+          </a>
         </footer>
       </div>
     </div>

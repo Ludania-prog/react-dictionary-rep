@@ -13,15 +13,16 @@ export default function Result(props) {
 
   return (
     <div className="Results">
-      <h2>{props.results.word}</h2>
+      <section>
+        <h2>{props.results.word}</h2>
 
-      <Phonetic phonetic={props.results.phonetic} />
-
+        <Phonetic phonetic={props.results.phonetic} />
+      </section>
       {props.results.meanings.map(function (meaning, index) {
         return (
-          <div key={index}>
+          <section key={index}>
             <Meaning meaning={meaning} />
-          </div>
+          </section>
         );
       })}
     </div>
